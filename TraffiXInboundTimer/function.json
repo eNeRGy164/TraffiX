@@ -1,0 +1,17 @@
+{
+  "bindings": [
+    {
+      "name": "timer",
+      "type": "timerTrigger",
+      "direction": "in",
+      "schedule": "0 */2 5-23 * * 1-5"
+    },
+    {
+      "type": "queue",
+      "name": "queue",
+      "queueName": "traffix",
+      "connection": "AzureWebJobsStorage",
+      "direction": "out"
+    }
+  ]
+}

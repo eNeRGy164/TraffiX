@@ -1,0 +1,22 @@
+{
+  "name": "traffix",
+  "version": "1.0.0",
+  "description": "Get your teams traffic displayed",
+  "dependencies": {
+    "node-fetch": "^2.3.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "traffic",
+    "here"
+  ],
+  "author": "Michaël Hompus",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/eNeRGy164/TraffiX"
+  }
+}

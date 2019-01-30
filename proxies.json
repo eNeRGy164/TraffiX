@@ -1,0 +1,19 @@
+{
+    "$schema": "http://json.schemastore.org/proxies",
+    "proxies": {
+        "TraffiXApi": {
+            "matchCondition": {
+                "route": "/Traffix/{name}",
+                "methods": [
+                    "GET",
+                    "HEAD",
+                    "OPTIONS"
+                ]
+            },
+            "backendUri": "https://tfx.azurewebsites.net/api/Traffix?name={name}",
+            "responseOverrides": {
+                "response.headers.Access-Control-Allow-Origin": "*"
+            }
+        }
+    }
+}

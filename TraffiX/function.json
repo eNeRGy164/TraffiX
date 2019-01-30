@@ -1,0 +1,28 @@
+{
+  "disabled": false,
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "type": "httpTrigger",
+      "direction": "in",
+      "name": "req",
+      "methods": [
+        "get",
+        "post"
+      ]
+    },
+    {
+      "type": "http",
+      "direction": "out",
+      "name": "res"
+    },
+    {
+      "name": "routes",
+      "type": "table",
+      "tableName": "Route",
+      "direction": "in",
+      "take": "25",
+      "filter": "(PartitionKey gt '{name}')"
+    }
+  ]
+}
